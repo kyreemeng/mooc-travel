@@ -1,16 +1,16 @@
 <template>
-  <div id="app">
+<div>
+  hrllo world
+</div>
    
-    <router-view/>
-  </div>
 </template>
 
 <script>
 export default {
-  name: 'App'
+    name:'Home'
 }
 </script>
 
 <style>
-
+   
 </style>
