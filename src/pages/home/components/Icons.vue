@@ -19,52 +19,19 @@
 <script>
 export default {
     name: 'HomeIcons',
+    props:{
+        list:Array
+    },
     data() {
         return {
-            iconList:[{
-            id:'001',
-            imgUrl:'http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png',
-            desc:'景点门票'
-            },{
-            id:'002',
-            imgUrl:'http://img1.qunarzz.com/piao/fusion/1803/6c/9e54a8540fee0102.png',
-            desc:'故宫'
-            },{
-            id:'003',
-            imgUrl:'http://img1.qunarzz.com/piao/fusion/1804/ff/fdf170ee89594b02.png',
-            desc:'北京必游'
-            },{
-            id:'004',
-            imgUrl:'http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20193/a40ee278d67000f2a29d2e20f6a029b3.png',
-            desc:'香山公园'
-            },{
-            id:'005',
-            imgUrl:'http://img1.qunarzz.com/piao/fusion/1804/5a/13ceb38dcf262f02.png',
-            desc:'一日游'
-            },{
-            id:'006',
-            imgUrl:'http://img1.qunarzz.com/piao/fusion/1803/67/9a1678221b8e0e02.png',
-            desc:'古水北镇'
-            },{
-            id:'007',
-            imgUrl:'http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20193/338c5b924c5809e8c7b14f60a953c3e2.png',
-            desc:'欢乐谷'
-            },{
-            id:'008',
-            imgUrl:'http://img1.qunarzz.com/piao/fusion/1803/76/eb88861d78fb9902.png',
-            desc:'赏红叶'
-            },{
-            id:'009',
-            imgUrl:'http://img1.qunarzz.com/piao/fusion/1803/ab/6f7d6e44963c9302.png',
-            desc:'泡温泉'
-            }]
+            
         }
      
     },
     computed: {
          pages(){
             const pages=[]
-            this.iconList.forEach((item,index)=>{
+            this.list.forEach((item,index)=>{
                 const page = Math.floor(index/8)
                 if (!pages[page]) {
                     pages[page]=[]
