@@ -16,7 +16,7 @@
 export default {
   name: "HomeSwiper",
   data() {
-    return {
+    return { 
       swiperOption: {
         pagination: ".swiper-pagination",
        loop:true,
@@ -42,7 +42,7 @@ export default {
   overflow: hidden;
   width: 100%;
   height: 0;
-  padding-bottom: 26%;
+  padding-bottom: 27%;
 
   .swiper-img {
     width: 100%;
